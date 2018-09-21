@@ -1,0 +1,115 @@
+page {
+  font-size: 15px;
+}
+
+.height_100 {
+  height: 100%;
+}
+
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.page_bd {
+  margin-top: 40px;
+}
+
+.index_title {
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  line-height: 40px;
+}
+
+.index_title_swiper {
+  height: 100%;
+}
+
+.banner_secondImg {
+  width: 32.5vw;
+  height: 15vh;
+  margin-top: 5px;
+}
+
+.banner_second {
+  justify-content: space-between;
+}
+
+.user_portrait {
+  width: 80px;
+  height: 80px;
+}
+
+.dynamic_title {
+  font-weight: 600;
+}
+
+.dynamic_more {
+  position: absolute;
+  right: 10px;
+}
+
+.user_portrait {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.dynamic_data {
+  margin: 5px 0 0 0;
+  background-color: white;
+  padding: 5px 10px 0 10px;
+}
+
+.dynamic_image {
+  width: 128px;
+  height: 128px;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.dynamic_label {
+  padding: 2px 10px 2px 10px;
+  background: #eff4f5;
+  border-radius: 15px;
+  margin-right: 10px;
+  color: #507a8b;
+}
+
+.label_view {
+  margin: 10px 0 10px 0;
+}
+
+.op_view {
+  justify-content: space-around;
+  padding: 5px 0 10px 0;
+  border-top: 1px solid #f1f1f1;
+}
+
+.dynamic_view {
+  background-color: #eff3f7;
+  padding-top: 1px;
+}
+
+.nav_title {
+  padding: 0 10px 0 10px;
+  color: #84828e;
+}
+
+.dynamic_time {
+  font-size: 0.5rem;
+  color:#7f7f7f;
+}
+.normal_icon{
+  width: 20px;
+  height: 20px;
+}
+.align_center{
+  align-items:center;
+}

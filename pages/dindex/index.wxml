@@ -1,0 +1,154 @@
+<view style="height:100%" >
+  <view class="page__hd topnav">
+    <view class="weui-flex index_title">
+      <view class="weui-flex align_center">
+        <image class="normal_icon" src="../image/icon/购物车.png"></image>
+      </view>
+      <view class="weui-flex">
+        <view class="nav_title">关注</view>
+        <view class="nav_title">推荐</view>
+        <view class="nav_title">视频</view>
+      </view>
+      <view class="weui-flex align_center">
+        <image class="normal_icon" src="../image/icon/搜索.png"></image>
+      </view>
+    </view>
+
+  </view>
+  <view class="page_bd">
+    <swiper class="height_100">
+      <block>
+        <swiper-item>
+          <!-- 关注内容 -->
+          <scroll-view scroll-y style="height:100vh">
+            <view class="dynamic_view">
+              <view class="dynamic_data" wx:for="{{dynamic}}">
+                <view class="weui-flex">
+                  <view>
+                    <image class="user_portrait" src="{{item.userpath}}"></image>
+                  </view>
+                  <view>
+                    <view>
+                      <text>{{item.username}}</text>
+                      <text class="dynamic_more">...</text>
+                    </view>
+                    <view class="dynamic_time">2天前</view>
+                  </view>
+                </view>
+
+                <view class="dynamic_title">{{item.title}}</view>
+                <view>{{item.description}}</view>
+                <view class="weui-flex flex-space-between">
+                  <block wx:for="{{item.images}}" wx:for-item="image">
+                    <image class="dynamic_image" src="{{image}}"></image>
+                  </block>
+                </view>
+                <view class="weui-flex label_view">
+                  <block wx:for="{{item.labels}}" wx:for-item="dynamic_label">
+                    <view class="dynamic_label">{{dynamic_label}}</view>
+                  </block>
+                </view>
+                <view class="weui-flex op_view">
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/星星空.png"></image>
+                    <text style='margin-left:5px'>{{item.colcount}}</text>
+                  </view>
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/评论.png"></image>
+                    <text style='margin-left:5px'>{{item.commentcount}}</text>
+                  </view>
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/点赞.png"></image>
+                    <text style='margin-left:5px'>{{item.admirecount}}</text>
+                  </view>
+                </view>
+
+              </view>
+            </view>
+          </scroll-view>
+
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+          <scroll-view scroll-y style="height: 100vh;">
+            <swiper style='height:30vh'>
+              <block wx:for="{{banner}}">
+                <swiper-item>
+                  <image style='width:100%' src="{{item.imgPath}}"></image>
+                </swiper-item>
+              </block>
+            </swiper>
+            <view class="weui-flex banner_second">
+              <view wx:for="{{[1,2,3]}}">
+                <image class="banner_secondImg" src="../image/banner/cropper.jpg"></image>
+              </view>
+            </view>
+
+            <view class="dynamic_view">
+              <view class="dynamic_data" wx:for="{{dynamic}}">
+                <view class="weui-flex">
+                  <view>
+                    <image class="user_portrait" src="{{item.userpath}}"></image>
+                  </view>
+                  <view>
+                    <view>
+                      <text>{{item.username}}</text>
+                      <text class="dynamic_more">...</text>
+                    </view>
+                    <view class="dynamic_time">2天前</view>
+                  </view>
+                </view>
+
+                <view class="dynamic_title">{{item.title}}</view>
+                <view>{{item.description}}</view>
+                <view class="weui-flex flex-space-between">
+                  <block wx:for="{{item.images}}" wx:for-item="image">
+                    <image class="dynamic_image" src="{{image}}"></image>
+                  </block>
+                </view>
+                <view class="weui-flex label_view">
+                  <block wx:for="{{item.labels}}" wx:for-item="dynamic_label">
+                    <view class="dynamic_label">{{dynamic_label}}</view>
+                  </block>
+                </view>
+                <view class="weui-flex op_view">
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/星星空.png"></image>
+                    <text style='margin-left:5px'>{{item.colcount}}</text>
+                  </view>
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/评论.png"></image>
+                    <text style='margin-left:5px'>{{item.commentcount}}</text>
+                  </view>
+                  <view class="weui-flex align_center">
+                    <image class="normal_icon" src="../image/icon/点赞.png"></image>
+                    <text style='margin-left:5px'>{{item.admirecount}}</text>
+                  </view>
+                </view>
+
+              </view>
+            </view>
+          </scroll-view>
+        </swiper-item>
+      </block>
+      <block>
+        <swiper-item>
+
+            <scroll-view scroll-y="true" style='height:100vh;background-color:#FFBBFF' bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+              <block wx:for="{{testData}}" >
+                <view style='height:25vh'>{{item.username}}</view>
+
+              </block>
+            </scroll-view>
+
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+
+
+
+
+</view>
