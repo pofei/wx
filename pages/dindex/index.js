@@ -15,7 +15,7 @@ Page({
       },
       {
         username: '陈新2', userpath: '../image/user/user.jpg',
-        title: '永远的七日之都2', description: '这是简介2...',
+        title: '感同身受', description: '这是简介2...',
         images: ['../image/banner/cropper.jpg', '../image/banner/cropper.jpg', '../image/banner/cropper.jpg'], labels: ['绘画区', '绘画', '凯莉', '凹凸世界'],
         admirecount: 33, commentcount: 103, colcount: 5
       }
